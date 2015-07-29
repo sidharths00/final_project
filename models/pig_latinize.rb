@@ -13,6 +13,7 @@ def piglatinize(word)
       word = word.split("")[1..-1].join
     end
     word + consonants + 'ay'
+    x = 5
   end
 end
 

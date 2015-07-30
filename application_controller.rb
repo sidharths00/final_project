@@ -7,4 +7,25 @@ class MyApp < Sinatra::Base
     erb :index
   end
 
+  get '/result' do
+    erb :result
+  end
+
+get '/data' do
+  erb :data
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 end

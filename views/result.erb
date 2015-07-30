@@ -14,9 +14,27 @@
      
      
      } 
+    .getcenter{
+      margin-left: 18%;
+      
+      
+      
+    }
+    td{
+      font-size: 350%;
+      color: yellow;
+      
+      
+      
+    }
     a{
+      color: yellow;
+      text-decoration: none;
+     
+    }
+    a.restart{
        
-       color: black;
+      color: black;
        text-decoration: none;
      }
     p{
@@ -30,7 +48,7 @@
     right: 50%;
    left: 41%;
    width: 100px;
-    top: 185px; 
+    top: 453px; 
      }
     
    </style>
@@ -42,10 +60,37 @@
   <link rel="stylesheet" href="style.css" type="text/css">
  </head>
  <body>
+<div class=getcenter>
+  <table style="width:100%" font size="200%" color="#999966"> 
+  <tr>
+    <td>   <a href="<%=@new [:one][:mobile_url]%>"><%=@new [:one][:name]%></a></td>
+    <td><%=@new [:one][:adress]%></td> 
+    <td><%=@new [:one][:rating]%></td>
+    <td><%=@new [:one][:phone]%></td>
+  </tr>
+  <tr>
+    <td>   <a href="<%=@new [:two][:mobile_url]%>"><%=@new [:two][:name]%> </a></td>
+    <td><%=@new [:two][:adress]%></td> 
+    <td><%=@new [:two][:rating]%></td>
+    <td><%=@new [:two][:phone]%></td>
+  </tr>
+  <tr>
+    <td>   <a href="<%=@new [:three][:mobile_url]%>"><%=@new [:three][:name]%> </a></td>
+    <td><%=@new [:three][:adress]%></td> 
+    <td><%=@new [:three][:rating]%></td>
+    <td><%=@new [:three][:phone]%></td>
   
-   <font size="200%" color="yellow"> <center><p> Thanks for using our application to help you Yelp! If you want to have another suggestion, click below. </p></center></font>
+  </table>
+   </div>
+
+   <font size="200%" color="#FFFFCC"> <center><p> Thanks for using our application to help you Yelp! If you want to have another suggestion, click below. If you want a yelp link to the Restuarant jusy click the name! </p></center></font>
 
   <a href="/"><h2><center><img src="https://mail.google.com/mail/u/0/?ui=2&ik=defddd9d44&view=att&th=14edae916da7693d&attid=0.1&disp=safe&realattid=f_icp26b540&zw"></center></h2> </a>
-    <font color="black" size="150%"><a href="/"><h3 id=restart> RESTART </h3></a></font>
+    <font color="black" size="150%"><a.restart href="/"><h3 id=restart> RESTART </h3></a></font>
+    <br>
+   <br>
+   <br>
+   <br>
+   <center><iframe src="https://embed.spotify.com/?uri=spotify:track:4th1RQAelzqgY7wL53UGQt" width="300" height="80" frameborder="0" allowtransparency="true"></iframe></center>
   </body>
 </html>
